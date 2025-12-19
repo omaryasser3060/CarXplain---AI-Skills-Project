@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html, body, [class*="st-"] {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+
+.stApp {
+    background-color: #020c1a;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    margin-top: 40px;
+}
+
+
+[data-testid="stSidebar"] {
+    display: none;
+}
+section[data-testid="stSidebar"] {
+    display: none;
+}
+div[data-testid="collapsedControl"] {
+    display: none;
+}
+
+
+h1, h2, h3 {
+    color: #00CCFF !important;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7);
+}
+
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 204, 255, 0.3);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: #00CCFF;
+}
+
+
+
+.stApp {
+    margin-top: 50px;
+}

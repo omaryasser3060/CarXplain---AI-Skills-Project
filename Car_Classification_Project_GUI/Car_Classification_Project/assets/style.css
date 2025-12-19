@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #020c1a; }
+::-webkit-scrollbar-thumb { background: rgba(0, 204, 255, 0.5); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #00CCFF; }
+
+
+html, body, [class*="st-"] {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+.stApp {
+    background-color: #020c1a;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    background-attachment: fixed;
+
+    margin-top: 0px;
+}
+
+
+[data-testid="stSidebar"], section[data-testid="stSidebar"], div[data-testid="collapsedControl"] {
+    display: none;
+}
+
+
+.hero-container {
+    text-align: center;
+
+    padding: 100px 1rem 4rem 1rem;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero-icon svg {
+    width: 120px; height: 120px; color: #00CCFF;
+    filter: drop-shadow(0 0 20px rgba(0, 204, 255, 0.4));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+    font-size: 4.5rem; font-weight: 800;
+    background: linear-gradient(90deg, #FFFFFF, #00CCFF);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin: 10px 0; letter-spacing: -2px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; color: #aaa; font-weight: 300; margin-bottom: 2rem;
+}
+
+
+a { text-decoration: none; }
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 204, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feature-card::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(0, 204, 255, 0.03), transparent);
+    transform: translateX(-100%); transition: 0.5s;
+}
+
+.feature-card:hover::before { transform: translateX(100%); }
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: #00CCFF;
+    box-shadow: 0 10px 40px rgba(0, 204, 255, 0.1);
+}
+
+.feature-icon svg { width: 60px; height: 60px; color: #00CCFF; margin-bottom: 1.5rem; }
+.feature-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: white; }
+.feature-desc { color: #888; font-size: 0.95rem; line-height: 1.6; }
+
+/* --- Team Section --- */
+.team-header { text-align: center; margin-top: 5rem; margin-bottom: 3rem; }
+.team-header h2 { font-size: 2.5rem; color: white; }
+.team-header span { color: #00CCFF; }
+
+.team-card {
+    background: rgba(11, 29, 54, 0.4);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+.team-card:hover { border-color: #00CCFF; background: rgba(11, 29, 54, 0.8); }
+
+.team-img {
+    width: 90px; height: 90px; border-radius: 50%; object-fit: cover;
+    border: 2px solid #00CCFF; margin-bottom: 15px; padding: 3px;
+    background: rgba(0, 204, 255, 0.1);
+}
+
+.team-name { font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 5px; }
+.team-role { font-size: 0.8rem; color: #00CCFF; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; }
