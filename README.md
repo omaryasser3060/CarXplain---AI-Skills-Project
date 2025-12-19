@@ -118,8 +118,10 @@ CarXplain/
 ```bash
 pip install -r requirements.txt
 streamlit run gui/Image_Analysis.py
+```
+---
 
-🧑‍🤝‍🧑Roles
+## 🧑‍🤝‍🧑Roles
 | Role                             | Responsibility                            |
 | -------------------------------- | ----------------------------------------- |
 | Data Acquisition & Preprocessing | Dataset handling and augmentation         |
@@ -130,7 +132,7 @@ streamlit run gui/Image_Analysis.py
 | GitHub Management                | Version control and collaboration         |
 
 ---
-📌 Learning Outcomes
+## 📌 Learning Outcomes
 
 By completing this project, the team gained experience in:
 
@@ -148,14 +150,14 @@ Collaborative development using GitHub
 
 ---
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 CarXplain demonstrates a complete deep learning pipeline from data preparation to deployment.
 By combining multiple CNN architectures, explainable AI, and an interactive GUI, the project delivers a robust and professional AI solution for car type classification.
 
 ---
 
-⭐ Acknowledgments
+## ⭐ Acknowledgments
 
 Stanford Cars Dataset
 
@@ -165,4 +167,4 @@ Streamlit Community
 
 ---
 
-Course: AI Skills
+## Course: AI Skills
